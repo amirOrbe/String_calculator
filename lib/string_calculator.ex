@@ -2,12 +2,11 @@ defmodule StringCalculator do
   @moduledoc """
   Documentation for `StringCalculator`.
   """
+  @allowed_characters [" ", ",", "\n"]
 
   @doc """
   Returns a integer from string
   """
-
-  @allowed_characters [" ", ",", "\n"]
   @spec add(binary()) :: integer()
   def add(string) when string == "", do: 0
 
